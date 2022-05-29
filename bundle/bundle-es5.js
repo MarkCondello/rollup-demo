@@ -1,0 +1,26 @@
+'use strict'; // import * as _ from 'lodash/string'
+
+var hello = function hello() {
+  return console.log('hello from a.js');
+}; // console.log(_.capitalize('hello from a.js uppercase from underscore yo'))
+
+
+function goodbye$1() {
+  console.log('goodbye from a.js');
+}
+
+function goodbye() {
+  console.log('goodbye from b.js');
+}
+
+function greetings() {
+  var saying = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'nada';
+  console.log('greetings from b.js, ' + saying + '!');
+} // alert('ROLLEMUP Rollem in!!!')
+
+
+hello();
+goodbye$1();
+goodbye();
+greetings(); // Cant work out how to add source maps to the build, had to use flag in build script.
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnVuZGxlLWVzNS5qcyIsInNvdXJjZXMiOlsiLi4vc3JjL2EuanMiLCIuLi9zcmMvYi5qcyIsIi4uL3NyYy9tYWluLmpzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGltcG9ydCAqIGFzIF8gZnJvbSAnbG9kYXNoL3N0cmluZydcblxuZXhwb3J0IGxldCBoZWxsbyA9ICgpPT4gY29uc29sZS5sb2coJ2hlbGxvIGZyb20gYS5qcycpXG4gIC8vIGNvbnNvbGUubG9nKF8uY2FwaXRhbGl6ZSgnaGVsbG8gZnJvbSBhLmpzIHVwcGVyY2FzZSBmcm9tIHVuZGVyc2NvcmUgeW8nKSlcbiAgXG5cblxuZXhwb3J0IGZ1bmN0aW9uIGdvb2RieWUoKSB7XG4gIGNvbnNvbGUubG9nKCdnb29kYnllIGZyb20gYS5qcycpO1xufSIsImV4cG9ydCBmdW5jdGlvbiBoZWxsbygpIHtcbiAgY29uc29sZS5sb2coJ2hlbGxvIGZyb20gYi5qcycpO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gZ29vZGJ5ZSgpIHtcbiAgY29uc29sZS5sb2coJ2dvb2RieWUgZnJvbSBiLmpzJyk7XG59XG5cbmV4cG9ydCBmdW5jdGlvbiBncmVldGluZ3Moc2F5aW5nID0gJ25hZGEnKSB7XG4gIGNvbnNvbGUubG9nKCdncmVldGluZ3MgZnJvbSBiLmpzLCAnICsgc2F5aW5nICsgJyEnKTtcbn0iLCJpbXBvcnQgKiBhcyBhIGZyb20gJy4vYS5qcyc7XG5pbXBvcnQgKiBhcyBiIGZyb20gJy4vYi5qcyc7XG5pbXBvcnQgJy4vc3R5bGUuc2NzcydcblxuLy8gYWxlcnQoJ1JPTExFTVVQIFJvbGxlbSBpbiEhIScpXG5hLmhlbGxvKCk7XG5hLmdvb2RieWUoKTtcbmIuZ29vZGJ5ZSgpO1xuYi5ncmVldGluZ3MoKVxuXG4vLyBDYW50IHdvcmsgb3V0IGhvdyB0byBhZGQgc291cmNlIG1hcHMgdG8gdGhlIGJ1aWxkLCBoYWQgdG8gdXNlIGZsYWcgaW4gYnVpbGQgc2NyaXB0LiJdLCJuYW1lcyI6WyJoZWxsbyIsImNvbnNvbGUiLCJsb2ciLCJnb29kYnllIiwiZ3JlZXRpbmdzIiwic2F5aW5nIiwiYS5oZWxsbyIsImEuZ29vZGJ5ZSIsImIuZ29vZGJ5ZSIsImIuZ3JlZXRpbmdzIl0sIm1hcHBpbmdzIjoiY0FBQTs7QUFFTyxJQUFJQSxLQUFLLEdBQUcsU0FBUkEsS0FBUTtFQUFBLE9BQUtDLE9BQU8sQ0FBQ0MsR0FBUixDQUFZLGlCQUFaLENBQUw7QUFBQSxDQUFaLEVBQ1A7OztBQUlPLFNBQVNDLFNBQVQsR0FBbUI7RUFDeEJGLE9BQU8sQ0FBQ0MsR0FBUixDQUFZLG1CQUFaO0FBQ0Y7O0FDTE8sU0FBU0MsT0FBVCxHQUFtQjtFQUN4QkYsT0FBTyxDQUFDQyxHQUFSLENBQVksbUJBQVo7QUFDRDs7QUFFTSxTQUFTRSxTQUFULEdBQW9DO0VBQUEsSUFBakJDLE1BQWlCLHVFQUFSLE1BQVE7RUFDekNKLE9BQU8sQ0FBQ0MsR0FBUixDQUFZLDBCQUEwQkcsTUFBMUIsR0FBbUMsR0FBL0M7QUFDRixFQ05BOzs7QUFDQUMsS0FBTztBQUNQQyxTQUFTO0FBQ1RDLE9BQVM7QUFDVEMsU0FBVyxJQUVYIn0=

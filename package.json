@@ -1,0 +1,29 @@
+{
+  "name": "rollup-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rollup": "cross-env NODE_ENV=development rollup -c -m inline",
+    "watch": "rollup --config --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "cross-env": "^7.0.3",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.52.1",
+    "vue": "^3.2.36"
+  },
+  "dependencies": {
+    "rollup-plugin-vue": "^6.0.0"
+  }
+}

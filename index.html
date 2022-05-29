@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roll up Demo</title>
+  <link href="./bundle/bundle.css" rel="stylesheet">
+</head>
+<body>
+  <h1><a target="_blank" href="https://blog.openreplay.com/the-ultimate-guide-to-getting-started-with-the-rollup-js-javascript-bundler">Roll up</a></h1>
+  <p>Minifying files can be done using terser plugin and running rollup in the terminal with this flag : <code>--environment NODE_ENV:development</code> 
+  </p>
+  <p>Node packages can be included using <code>node-resolve</code> & <code>plugin-commonjs</code>.</p>
+  <p>Providing support for es5 can be acheived using the <code>getBabelOutputPlugin</code></p>
+  <p>Compiling scss is done through importing a main.scss file into the entry js file and using a plugin</p>
+  <p><a target="_blank" href="https://rollup-plugin-vue.vuejs.org/examples.html#minimal">Compilling Vue.js files</a> is done with few configuations and a <code>rollup-plugin-vue</code> module.</p>
+  
+  <h2>Vue is loaded below</h2>
+  <section id="app"></section>
+  <!-- https://adambien.blog/roller/abien/entry/uncaught_referenceerror_process_is_not -->
+  <script>
+    window.process = {
+      env: {
+          NODE_ENV: 'development'
+      }
+    } 
+  </script>
+
+  <!-- <script src="./bundle/bundle-es5.js"></script> -->
+  <script src="./bundle/bundle.js"></script>
+  <script src="./dist/vue-app.js"></script>
+</body>
+</html>
